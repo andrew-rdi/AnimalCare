@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".form.FirstPetFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="fitXY"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/lin_frag_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/wall"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:text="Ім'я:"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/wall"/>
+
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/animalTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/wall"
+                    android:textSize="18sp"
+                    android:layout_marginTop="0dp"
+                    android:text="Тварина:"
+                    android:textColorHint="@color/wall"
+                    android:background="@drawable/edit_btn"/>
+                <TextView
+                    android:id="@+id/breedTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/wall"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Порода:"
+                    android:textColorHint="@color/wall"
+                    android:background="@drawable/edit_btn"/>
+                <TextView
+                    android:id="@+id/sexTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/wall"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Стать:"
+                    android:textColorHint="@color/wall"
+                    android:background="@drawable/edit_btn"/>
+                <TextView
+                    android:id="@+id/ageTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/wall"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Вік:"
+                    android:textColorHint="@color/wall"
+                    android:background="@drawable/edit_btn"/>
+                <TextView
+                    android:id="@+id/birthdayTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/wall"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Дата Народження:"
+                    android:textColorHint="@color/wall"
+                    android:background="@drawable/edit_btn"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="112dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_img_white"
+                android:src="@drawable/ic_add_photo_white"
+                android:padding="5dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@drawable/ic_edit_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

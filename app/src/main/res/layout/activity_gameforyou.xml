@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gameforyou.Gameforyou">
+
+    <ImageView
+        android:id="@+id/wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:id="@+id/container_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_green"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/button_back"
+                    android:textSize="24sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/text_levels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/level"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/point_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_points"
+                        ></TextView>
+
+                <TextView
+                    android:id="@+id/point_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/point_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/point_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/point_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+                    ></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/left_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/style_img_game"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/imgtest" />
+
+                <ImageView
+                    android:id="@+id/rigth_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/style_img_game"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/imgtest" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/text_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/variant1"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/text_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/variant2"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                    </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.animalcare">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:name=".documents.contacts.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".register.LoginActivity"></activity>
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".documents.contacts.ReadContacts" />
+        <activity android:name=".documents.contacts.AddContacts" />
+        <activity android:name=".documents.contacts.Contacts" />
+        <activity android:name=".documents.books.ViewPDFFiles" />
+        <activity android:name=".documents.tablayout.Table" />
+        <activity android:name=".hotel.Hotels" />
+        <activity android:name=".shelter.SheltersForPet" />
+        <activity android:name=".images.ImageActivity" />
+        <activity android:name=".images.Images" />
+        <activity
+            android:name=".gameforpet.traninglist.TrainingTurtle"
+            android:label="@string/title_activity_training_turtle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gameforpet.traninglist.TrainingFish"
+            android:label="@string/title_activity_training_fish"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gameforpet.traninglist.TrainingRodent"
+            android:label="@string/title_activity_training_rodent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gameforpet.traninglist.TrainingParrot"
+            android:label="@string/title_activity_training_parrot"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gameforpet.traninglist.TrainingDoc"
+            android:label="@string/title_activity_training_doc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gameforpet.traninglist.TrainingCat"
+            android:label="@string/title_activity_training_cat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".gameforpet.traninglist.Training" />
+        <activity android:name=".documents.books.ReadBook" />
+        <activity android:name=".documents.PdfInput" />
+        <activity android:name=".gameforpet.StopWatchAct" />
+        <activity android:name=".health.veterinarianreminder.VeterinarianReminder" />
+        <activity android:name=".health.operationreminder.OperationReminder" />
+        <activity android:name=".health.diseasereminder.DiseaseReminder" />
+        <activity android:name=".health.analisreminder.AnalisReminder" />
+        <activity android:name=".health.allergyreminder.AllergyReminder" />
+        <activity android:name=".care.woolreminder.WoolReminder" />
+        <activity android:name=".care.vitaminsreminder.VitaminsReminder" />
+        <activity android:name=".care.teethreminder.TeethReminder" />
+        <activity android:name=".care.gamereminder.GameReminder" />
+        <activity android:name=".care.eatreminder.EatReminder" />
+        <activity android:name=".care.earreminder.EarReminder" />
+        <activity android:name=".care.clawsreminder.ClawsReminder" />
+        <activity android:name=".care.CareReminder" />
+        <activity android:name=".health.HealthList" />
+        <activity android:name=".care.CareList" />
+        <activity android:name=".reminder.Reminder" />
+        <activity android:name=".notes.Notes" />
+        <activity android:name=".shelter.Shelter" />
+        <activity android:name=".gameforpet.GameForPet" />
+        <activity android:name=".health.Health" />
+        <activity android:name=".care.Care" />
+        <activity android:name=".documents.Documents" />
+        <activity android:name=".form.MyPet" />
+        <activity android:name=".gameforyou.Gameforyou" />
+        <activity android:name=".BeginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+
+        <receiver android:name=".reminder.AlertReceiver" />
+        <receiver android:name=".care.CareAlertReceiver" />
+        <receiver android:name=".care.clawsreminder.ClawsAlertReceiver" />
+        <receiver android:name=".care.earreminder.EarAlertReceiver" />
+        <receiver android:name=".care.eatreminder.EatAlertReceiver" />
+        <receiver android:name=".care.gamereminder.GameAlertReceiver" />
+        <receiver android:name=".care.teethreminder.TeethAlertReceiver" />
+        <receiver android:name=".care.woolreminder.WoolAlertReceiver" />
+        <receiver android:name=".health.allergyreminder.AllergyAlertReceiver" />
+        <receiver android:name=".health.analisreminder.AnalisAlertReceiver" />
+        <receiver android:name=".health.diseasereminder.DiseaseAlertReceiver" />
+        <receiver android:name=".health.operationreminder.OperationAlertReceiver" />
+        <receiver android:name=".health.veterinarianreminder.VeterinarianAlertReceiver" />
+    </application>
+
+</manifest>

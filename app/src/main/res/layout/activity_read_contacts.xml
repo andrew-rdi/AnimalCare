@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".documents.contacts.ReadContacts">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@drawable/indigo_custom"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </View>
+
+        <TextView
+            android:id="@+id/notes_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/contacts_8"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absolutey="28dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/notes_2"
+            android:layout_width="347dp"
+            android:layout_height="113dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/contacts_9"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/notes_1"
+            tools:ignore="MissingConstraints"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/read_contact_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_contact_small"
+        android:clickable="true"
+        android:maxWidth="150px"
+        android:maxHeight="150px"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/read_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/read_contact_image"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="aaa"/>
+
+    <TextView
+        android:id="@+id/read_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/read_contact_image"
+        android:layout_marginTop="16dp"
+        android:autoLink="phone"
+        android:textSize="16sp"
+        android:text="0000-0000"/>
+
+    <TextView
+        android:id="@+id/read_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/read_contact_image"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:autoLink="email"
+        android:text="a@a.com"/>
+
+    <ListView
+        android:id="@+id/read_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/read_email"
+        android:layout_marginTop="16dp">
+
+    </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

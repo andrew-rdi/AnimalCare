@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "744859316041",
+    "firebase_url": "https://animal-care-rdi.firebaseio.com",
+    "project_id": "animal-care-rdi",
+    "storage_bucket": "animal-care-rdi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744859316041:android:59f235cc3d1f929ebdf498",
+        "android_client_info": {
+          "package_name": "com.example.animalcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744859316041-3eqv6sm9vibc7cuoof8ji8l8i24ub7ui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.animalcare",
+            "certificate_hash": "3070dc35929efadf73312a3488bccf329b0fa6b5"
+          }
+        },
+        {
+          "client_id": "744859316041-r973svksvbk0qkbbua27pabgsqi8vgmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDecAau6Np-yeS6njzAoa5Rg91LC_r54e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744859316041-r973svksvbk0qkbbua27pabgsqi8vgmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

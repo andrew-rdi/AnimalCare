@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <ImageView
+        android:id="@+id/contact_item_contact_image"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:maxWidth="150px"
+        android:maxHeight="150px"
+        android:src="@drawable/ic_contact_small"/>
+
+    <TextView
+        android:id="@+id/contact_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/contact_item_contact_image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/contact_item_contact"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:maxWidth="120px"
+        android:maxHeight="120px"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/icon_call_contact"
+        />
+</RelativeLayout>

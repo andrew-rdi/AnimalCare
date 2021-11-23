@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#080E31</color>
+    <color name="colorPrimaryDark">#080E31</color>
+    <color name="colorAccent">#1ABC9C</color>
+    <color name="text_bottom">#c9c9c9</color>
+    <color name="ripple_effect">#ed8260</color>
+    <color name="button_sign_in">#000000</color>
+    <color name="button_sign_in_stroke">#ffffff</color>
+    <color name="button_back">#f5835f</color>
+    <color name="button_back95">#95f5835f</color>
+    <color name="black60">#60000000</color>
+    <color name="white">#ffffff</color>
+    <color name="wall">#676b74</color>
+    <color name="green">#9019FF19</color>
+    <color name="button">#1ABC9C</color>
+    <color name="fio">#211D44</color>
+    <color name="tabtindicatorcolor">#2d2d2d</color>
+    <color name="costum_main">#ECECEC</color>
+    <color name="circle">#C7C5C5</color>
+</resources>
